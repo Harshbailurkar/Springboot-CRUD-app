@@ -26,7 +26,7 @@ public class UserController {
     }
     @GetMapping("/admin-route")
     public ResponseEntity<String> getAdminRoute(){
-        return ResponseEntity.ok("Admin Route");
+        return ResponseEntity.ok("You Are Admin! Admins are only allowed to access it. ");
     }
 
     @GetMapping("/users")

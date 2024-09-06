@@ -20,5 +20,6 @@ public class UserModel {
     private String orgName;
     private String email;
     private String password;
+    private String role = "USER";
 
 }

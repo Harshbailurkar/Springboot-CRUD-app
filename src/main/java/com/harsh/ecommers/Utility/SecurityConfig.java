@@ -32,7 +32,9 @@ public class SecurityConfig {
 
       return http
                 .csrf(customizer ->customizer.disable())
+
                 .authorizeRequests(request->request
+                        .requestMatchers("/admin-route").hasRole("ADMIN")
                         .requestMatchers(
                                 "/user/register",
                                 "/user/login"
